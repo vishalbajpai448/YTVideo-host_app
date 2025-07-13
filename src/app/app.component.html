@@ -1,1 +1,39 @@
-<router-outlet></router-outlet>
+<header class="host-header">
+    <div class="header-inner">
+        <div class="logo">VirtualBoard</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Docs</a>
+            <a href="#">About</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="content">
+        <h1>Host App</h1>
+        <p>This is the host application that loads the micro frontend.</p>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Remote App 1</h3>
+                <p>This micro frontend loads on the default route.</p>
+                <button>Reload MFE1</button>
+            </div>
+            <div class="card">
+                <h3>Remote App 2</h3>
+                <p>Click below to navigate and load MFE2 remotely.</p>
+                <button>Load MFE2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="remote-content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; 2025 VirtualBoard. All rights reserved.</p>
+    </footer>
+</div>
